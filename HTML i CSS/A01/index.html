@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="cat">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <title>Movie Database</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Cercador de pel·lícules || Maqueta disseny">
+    <meta name="description" content="Cercador de pel·lícules || Maqueta disseny">
+    <link rel="icon" href="images/icon.svg" type="image/svg+xml">
 </head>
 <body>
     <header>
-        <img src="images/logo.svg" height="25px" alt="Logo Web">
+        <img src="images/logo.svg" height="25" alt="Logo Web">
         <nav>
             <ul>
                 <li><a href="Buscador">Buscador</a></li>
-                <li><a href="Contacte">Contacte</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
             </ul>
         </nav>
     </header>
@@ -23,8 +24,11 @@
                 <h1>BUSCAR una pel·lícula</h1>
                 <p>Milions de títols, un sol cercador.</p>
             </div>
-            <input type="text" placeholder="Cerca una pel·lícula, per exemple...">
-            <button>Cercar</button>
+            <form method="get" action="https://www.themoviedb.org/search">
+                <label for="query">Cerca una pel·lícula</label>
+                <input type="search" id="query" name="query">
+                <button>Cercar</button>
+            </form>
         </section>
 
         <section>
@@ -32,17 +36,17 @@
                 <h2>Resultats</h2>
                 <div>
                     <article>
-                        <img src="images/dune_poster.jpg" height="300px" alt="Dune poster">
+                        <img src="images/dune_poster.jpg" height="300" alt="Dune poster">
                         <h3>Dune: Part Two</h3>
                         <p>2024</p>
                     </article>
                     <article>
-                        <img src="images/lordoftherings.jpg" height="300px" alt="The lord of the rings:The two Towers Poster">
+                        <img src="images/lordoftherings.jpg" height="300" alt="The lord of the rings:The two Towers Poster">
                         <h3>The Lord of the Rings: The two Towers</h3>
                         <p>2002</p>
                     </article>
                     <article>
-                        <img src="images/spiderman.webp" height="300px" alt="spiderman:Brand New Day Poster">
+                        <img src="images/spiderman.webp" height="300" alt="spiderman:Brand New Day Poster">
                         <h3>Spider-man:Brand New Day</h3>
                         <p>2026</p>
                     </article>
